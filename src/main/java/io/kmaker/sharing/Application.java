@@ -1,4 +1,4 @@
-package io.kmaker.__min_sharing;
+package io.kmaker.sharing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
