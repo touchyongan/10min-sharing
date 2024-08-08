@@ -1,4 +1,4 @@
-package io.kmaker.__min_sharing;
+package io.kmaker.sharing;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

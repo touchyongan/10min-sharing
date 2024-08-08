@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'io.kmaker.10-min-sharing' is invalid and this project uses 'io.kmaker.__min_sharing' instead.
+* The original package name 'io.kmaker.10-min-sharing' is invalid and this project uses 'io.kmaker.sharing' instead.
 
 # Getting Started
 
