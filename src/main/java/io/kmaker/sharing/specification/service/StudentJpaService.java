@@ -43,4 +43,16 @@ public class StudentJpaService {
         final var result = studentRepo.findAllWithProjection(spec, pageRequest);
         return result;
     }
+
+    public Page<StudentProjectionData> getAllStudentsV3(final int page,
+                                                        final int limit,
+                                                        final String sort,
+                                                        final Specification<Student> spec) {
+        final var direction = "ASC".equalsIgnoreCase(sort) ? Sort.Direction.ASC : Sort.Direction.DESC;
+        final var sortObj = Sort.by(direction, "id");
+        final var pageRequest = PageRequest.of(page, limit, sortObj);
+        final var result = studentRepo.findAllWithGenericProjection(spec, pageRequest,
+                StudentProjectionData.class, Student.class);
+        return result;
+    }
 }
